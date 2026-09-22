@@ -23,4 +23,4 @@
 
 **Автор:** Анастасия Оточина  
 **Контакты:** larnia@list.ru  
-**GitHub:** [ссылка на профиль](https://github.com/irishsun)
+**GitHub:** [профиль](https://github.com/irishsun)
