@@ -218,7 +218,7 @@ Authorization: Bearer <token>
 |------|------|----------|
 | policy_id | integer | Уникальный идентификатор договора в системе |
 | policy_status | string | Статус договора. Возможные значения: `created` — договор создан, `declined` — договор отклонён (например, котировка истекла) |
-| policy_number | string | Номер полиса ОСАГО в формате ЕГРП. Не возвращается, если policy_status = declined |
+| policy_number | string | Номер полиса ОСАГО. Не возвращается, если policy_status = declined |
 
 ### Коды ответов
 
