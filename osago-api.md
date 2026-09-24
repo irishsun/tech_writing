@@ -27,6 +27,21 @@
 
 **Формат дат:** все даты передаются в формате ISO 8601 (`YYYY-MM-DD`).
 
+```mermaid
+sequenceDiagram
+    participant Клиент
+    participant Сервер
+
+    Клиент->>Сервер: POST /auth/token (login, password)
+    Сервер-->>Клиент: 200 (token)
+
+    Клиент->>Сервер: POST /osago/calculate (данные клиента, token)
+    Сервер-->>Клиент: 200 (quote_id)
+
+    Клиент->>Сервер: POST /osago/policy (quote_id, паспорт, водители, token)
+    Сервер-->>Клиент: 200 (policy_id)
+```
+
 ---
 
 ## Аутентификация
